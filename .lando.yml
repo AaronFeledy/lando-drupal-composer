@@ -1,0 +1,12 @@
+name: drupal
+recipe: drupal8
+config:
+  webroot: web
+  xdebug: true
+
+services:
+  appserver:
+    run:
+      - "cd $LANDO_MOUNT && composer create-project drupal-composer/drupal-project:8.x-dev temp --stability dev --no-interaction"
+      - "cd $LANDO_MOUNT/temp && find . -maxdepth 1 -exec mv {} .. \\;"
+      - "cd $LANDO_MOUNT && rmdir temp"
