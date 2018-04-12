@@ -6,7 +6,7 @@ The easiest way to spin up a [Composer template for Drupal projects](https://git
 
 2. Run these commands in your terminal:
     ```
-    git clone https://github.com/AaronFeledy/lando-drupal-composer.git && cd lando-drupal
+    git clone https://github.com/AaronFeledy/lando-drupal-composer.git && cd lando-drupal-composer
     lando start
     ```
 3. Be awesome.
